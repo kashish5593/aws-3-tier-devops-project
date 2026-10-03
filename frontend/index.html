@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Task Manager</h1>
+            <p>Docker + Flask + MySQL</p>
+        </header>
+
+        <section class="task-form">
+
+            <input
+                type="text"
+                id="taskTitle"
+                placeholder="Enter task title..."
+            >
+
+            <input
+                type="text"
+                id="taskDescription"
+                placeholder="Enter description..."
+            >
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+        </section>
+
+        <section class="status">
+
+            <span id="systemStatus">
+                Checking system...
+            </span>
+
+        </section>
+
+        <section>
+
+            <h2>Tasks</h2>
+
+            <div id="taskList">
+                Loading tasks...
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+
+.env
+
+.vscode/
+.idea/
+
+venv/
+.venv/
+
+mysql_data/
+
+*.log
+
+
+
+# AWS deployment files
+docker-compose.aws.yml
+.env.aws
+*.pem
